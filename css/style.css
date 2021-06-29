@@ -1,0 +1,128 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: teal;
+}
+
+.z_main__container {
+  width: 100vw;
+}
+
+.z_main__container .shopping_list {
+  width: 40%;
+  margin: 20rem auto;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.shopping {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.shopping input {
+  border: 0.1rem solid #999;
+  padding: 1rem;
+  font-size: 2rem;
+  width: 64%;
+  margin-right: 0;
+  outline: none;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.shopping button {
+  border: none;
+  padding: 1.1rem;
+  font-size: 2rem;
+  width: 34%;
+  margin-left: 0;
+  background-color: crimson;
+  color: aliceblue;
+}
+
+.shopping_list ul.list li {
+  list-style: none;
+  font-size: 2rem;
+  margin: 0.4rem 0;
+  padding: 1rem;
+  border-bottom: 0.1rem solid orangered;
+  color: rgb(138, 146, 153);
+  width: 96%;
+  border-radius: 0.4rem;
+  transition: box-shadow 120ms ease-in-out;
+}
+
+.shopping_list ul.list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopping_list ul.list li input {
+  margin-right: 2rem;
+  color: orangered;
+}
+
+.shopping_list ul.list li button {
+  font-size: 2rem;
+  color: orangered;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.shopping_list ul.list li:hover {
+  box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 84.6rem) {
+  .z_main__container .shopping_list {
+    width: 50%;
+  }
+
+  .shopping input {
+    font-size: 1.6rem;
+    width: 60%;
+  }
+
+  .shopping button {
+    font-size: 1.6rem;
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 52rem) {
+  .shopping button span.ms {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 36.4rem) {
+  .shopping input {
+    font-size: 1.6rem;
+    width: 70%;
+  }
+
+  .shopping button {
+    font-size: 2.6rem;
+    width: 30%;
+  }
+  .shopping button span.ts {
+    display: none;
+  }
+
+  .shopping_list ul.list li {
+    width: 91.4%;
+  }
+}
